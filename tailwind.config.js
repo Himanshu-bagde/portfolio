@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
@@ -20,7 +21,12 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        'gradient-black': 'linear-gradient(to right, #434343, #000000)',
+      'gradient-violet': 'linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%)',
       },
+      textColor: {
+      'gradient-orange': 'linear-gradient(to top, #f12711, #f5af19)',
+    }
     },
   },
   plugins: [],
